@@ -10,23 +10,25 @@ ul {
 
 .header {
     display: grid;
-    grid-template-columns: 2fr 1,5fr 1fr;
+    grid-template-columns: repeat(3, auto);
+    box-sizing: content-box;
     grid-template-areas: 
-    "navigation header-logo contacts";
+    "navigation header-logo contacts"; 
     align-items: center;
     font-size: 18px;
     margin: 92px 24px 96px;
+    gap: 20px;
 }
 
 .header__menu {
     grid-area: navigation;
-    
     line-height: 21px;
 }
 
 .header__links-list {
     display: flex;
     justify-content: space-evenly;
+    gap: 10px;
 }
 
 .header__links-list-item {
@@ -47,21 +49,31 @@ ul {
 
 .header__logo {
     grid-area: header-logo;
-    max-width: 148px;
-    max-height: 105px;
 }
 
-.contacts {
+.header__logo-image {
+    width: 140px;
+}
+
+
+
+.header__contacts {
    /* grid-area: contacts; */
-    justify-self: center;
+    justify-self: end;
     line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
 }
 
 .contacts a {
     border-bottom: 1px solid #000000;
 }
 
-
+.address {
+    font-style: normal;
+}
 
 
 
@@ -120,10 +132,12 @@ ul {
 }
 
 .cover__descriptiom {
-    display: flex;
-    margin-top: 145px;
-    padding-bottom: 40px;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 125px;
+    padding-bottom: 60px;
+    gap: 10px;
+    justify-content: space-evenly;
 }
 
 .cover__description-text {
@@ -286,7 +300,7 @@ ul {
 
 
 .footer {
-    margin: 180px 50px 0;
+    margin: 180px 50px 90px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
