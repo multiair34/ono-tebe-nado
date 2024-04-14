@@ -123,10 +123,6 @@ ul {
     align-self: flex-end;
 }
 
-.letter-spacing-extended {
-    
-}
-
 .no-letter-spacing {
     letter-spacing: 18px;
 }
