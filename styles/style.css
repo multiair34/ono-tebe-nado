@@ -16,7 +16,7 @@ ul {
     "navigation header-logo contacts"; 
     align-items: center;
     font-size: 18px;
-    margin: 92px 24px 96px;
+    margin: 92px 24px 90px;
     gap: 20px;
 }
 
@@ -49,6 +49,7 @@ ul {
 
 .header__logo {
     grid-area: header-logo;
+
 }
 
 .header__logo-image {
@@ -58,8 +59,8 @@ ul {
 
 
 .header__contacts {
-   /* grid-area: contacts; */
-    justify-self: end;
+    grid-area: contacts;
+    justify-self: center;
     line-height: 24px;
     display: flex;
     flex-direction: column;
