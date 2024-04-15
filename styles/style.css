@@ -115,7 +115,7 @@ ul {
 .aligned-text_center {
     line-height: 100px;
     align-self: center;
-    padding: 0 5px 0 0;
+    padding: 0 30px 0 0;
 }
 
 .aligned-text_right {
@@ -124,7 +124,12 @@ ul {
     align-self: flex-end;
 }
 
+.letter-spacing-extended {
+    padding-left: 30px;
+}
+
 .no-letter-spacing {
+    text-align: right;
     letter-spacing: 18px;
 }
 
