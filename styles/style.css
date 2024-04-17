@@ -69,18 +69,15 @@
 
 
 .cover {
-    background-image: url(./images/cover.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../images/cover.jpg) no-repeat center / cover;
     z-index: -1;
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
 }
 
 .overlay {
     background-color: rgb(0, 0, 0, 0.6);
-
-    
+    padding: 165px 0 60px;
 }
 
 .cover__title {  
@@ -91,7 +88,6 @@
     text-transform: uppercase;
     font-size: 100px;
     color: white;
-    padding: 165px 0 0;
     letter-spacing: 30px;
 }
 
@@ -126,7 +122,6 @@
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 125px;
-    padding-bottom: 60px;
     gap: 10px;
     justify-content: space-evenly;
 }
@@ -150,18 +145,15 @@
     line-height: 26px;
     border: 1px solid white;
     padding: 12px 32px;
+    cursor: pointer;
 }
 
 
 
 .lots {
-    margin-top: 180px;
-}
-
-.lots-content {
+    margin: 180px 24px 0;
     max-width: 1050px;
     max-height: 690px;
-    margin: 0 24px;
 }
 
 .lots__heading {
@@ -185,24 +177,15 @@
 }
 
 .card_type_film {
-    background-image: url(./images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-    background-image: url(./images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-    background-image: url(./images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../images/card-lot-03.jpg);
 }
 
 .card-link {
@@ -220,6 +203,9 @@
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card__title {
@@ -244,7 +230,7 @@
 
 
 .about {
-    margin: 145px 24px 0;
+    padding: 145px 24px 0;
 }
 
 .about__column {
@@ -284,7 +270,7 @@
     grid-column: 2;
 }
 
-.about__text-start {
+.about__text:first-of-type {
     padding-bottom: 25px;
 }
 
@@ -300,7 +286,10 @@
 }
 
 .contacts__footer {
+    display: flex;
     justify-self: start;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .footer__menu-list {
