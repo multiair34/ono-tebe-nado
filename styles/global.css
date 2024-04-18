@@ -39,3 +39,7 @@ img {
 ul {
   list-style: none;
 }
+
+button {
+  background-color: unset;
+}

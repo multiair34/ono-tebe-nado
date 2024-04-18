@@ -155,7 +155,6 @@
 .lots {
     margin: 180px 24px 0;
     max-width: 1050px;
-    max-height: 690px;
 }
 
 .lots__heading {
@@ -175,7 +174,6 @@
     flex-grow: 1;
     list-style: none;
     max-width: 334px;
-    max-height: 563px;
 }
 
 .card_type_film {
@@ -229,8 +227,9 @@
 
 .lots__look-more-link {
     display: block;
-    padding: 35px 40px 0;
     text-decoration: underline;
+    margin: 33px 0 0 40px;
+    width: fit-content;
 }
 
 .about {
